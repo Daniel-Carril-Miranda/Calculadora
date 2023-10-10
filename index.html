@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Pro</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div id="display" class="screen">
+            <output id="outNum2"></output>
+            <output id="outNum1"></output>
+        </div>
+        <div id="buttons" class="buttons">
+            <div id="col" class="col">
+                <button class="btn1" onclick="OperatorSelector('%')">%</button> 
+                <button class="btn1" onclick="OperatorSelector('¹/x')">¹/x</button>
+                <button class="btn" onclick="SelectedNumber('7')">7</button>
+                <button class="btn" onclick="SelectedNumber('4')">4</button>
+                <button class="btn" onclick="SelectedNumber('1')">1</button>
+                <button class="btn" onclick="OperatorSelector('+/-')">+/-</button> 
+            </div>
+            <div id="col" class="col">
+                <button class="btn1" onclick="SelectedNumber('π')">π</button> 
+                <button class="btn1" onclick="OperatorSelector('X²')">X²</button>
+                <button class="btn" onclick="SelectedNumber('8')">8</button>
+                <button class="btn" onclick="SelectedNumber('5')">5</button>
+                <button class="btn" onclick="SelectedNumber('2')">2</button>
+                <button class="btn" onclick="SelectedNumber('0')">0</button>
+            </div>
+            <div id="col" class="col">
+                <button class="btn1" onclick="DeleteAll()">C</button> 
+                <button class="btn1" onclick="OperatorSelector('²√x')">²√x</button>
+                <button class="btn" onclick="SelectedNumber('9')">9</button>
+                <button class="btn" onclick="SelectedNumber('6')">6</button>
+                <button class="btn" onclick="SelectedNumber('3')">3</button>
+                <button class="btn" onclick="SelectedNumber('.')">,</button> 
+            </div>
+            <div id="col" class="col">
+                <button class="btn1" onclick="DeleteLastNumber()">⌫</button> 
+                <button class="btn1" onclick="OperatorSelector('/')">÷</button>
+                <button class="btn1" onclick="OperatorSelector('*')">✕</button>
+                <button class="btn1" onclick="OperatorSelector('-')">﹣</button>
+                <button class="btn1" onclick="OperatorSelector('+')">+</button>
+                <button class="equal" onclick="Calculate()">＝</button> 
+            </div>
+        </div>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
